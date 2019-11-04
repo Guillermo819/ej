@@ -2,7 +2,9 @@
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Examen 2aP</title>
+	<title>ex segundaP</title>
+	<link rel="stylesheet" href="css/materialize.min.css">
+	<link rel="stylesheet" href="css/style.css">
 
 </head>
 <body class="container">
@@ -15,25 +17,27 @@
 	<br><hr><br>
 	<main class="row">
 		<section class="center col s5">
-			<form>
+			<form id="form">
 				<div class="input-field">
-					<input type="number">
+					<input type="number" id="v1">
 					<label>Valor 1</label>
 				</div>
 				<div class="input-field">
-					<input type="number">
+					<input type="number" id="v2">
 					<label>Valor 2</label>
 				</div>
 				<input type="submit" class="waves-effect waves-light btn" value="Calcular">
 			</form>	
 		</section>
 		<section class="col s6">
-			<div>La suma es: xxx</div>
-			<div>La resta es: xxx</div>
-			<div>La multiplicacion es: xxx</div>
-			<div>La división es: xxx</div>
+			<div>La suma es: <Span id="rSuma"></Span></div>
+			<div>La resta es:<Span id="rResta"></Span></div>
+			<div>La multiplicacion es:<Span id="rMult"></Span></div>
+			<div>La división es: <Span id="rDiv"></Span></div>
 		</section>
 	</main>
-
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/materialize.min.js"></script>
+	<script src="js/app.js"></script>
 </body>
 </html>
